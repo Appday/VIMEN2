@@ -73,5 +73,84 @@
         android:layout_below="@+id/checkBox7"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragen?"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_alignParentEnd="true"
+        android:textSize="11sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragen?"
+        android:id="@+id/button2"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_alignEnd="@+id/button"
+        android:layout_below="@+id/button"
+        android:textSize="11sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragen?"
+        android:id="@+id/button3"
+        android:layout_above="@+id/checkBox4"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:textSize="11sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragen?"
+        android:id="@+id/button4"
+        android:layout_above="@+id/checkBox5"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignTop="@+id/checkBox4"
+        android:textSize="11sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragen?"
+        android:id="@+id/button5"
+        android:layout_alignBottom="@+id/checkBox5"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_below="@+id/button4"
+        android:textSize="11sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragen?"
+        android:id="@+id/button6"
+        android:layout_alignBottom="@+id/checkBox6"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_alignTop="@+id/checkBox6"
+        android:textSize="11sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragen?"
+        android:id="@+id/button7"
+        android:layout_above="@+id/checkBox8"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button6"
+        android:textSize="11sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragen?"
+        android:id="@+id/button8"
+        android:layout_alignBottom="@+id/checkBox8"
+        android:layout_alignEnd="@+id/button7"
+        android:layout_alignTop="@+id/checkBox8"
+        android:textSize="11sp"/>
+
 
 </RelativeLayout>
