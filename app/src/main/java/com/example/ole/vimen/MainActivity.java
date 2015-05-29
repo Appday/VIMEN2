@@ -2,6 +2,7 @@ package com.example.ole.vimen;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,6 +29,12 @@ public class MainActivity extends Activity {
         startActivity(new Intent(getApplicationContext(), ListActivity.class));
 
     }
+
+    public void mensa (View view){
+        Intent mensaIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.studentenwerk-rostock.de/index.php?lang=de&mainmenue=4&submenue=47"));
+        startActivity(mensaIntent);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
