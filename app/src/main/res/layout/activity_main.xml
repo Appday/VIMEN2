@@ -8,6 +8,29 @@
     <TextView android:text="Hallo Erstis" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deine Tour"
+        android:id="@+id/btn_tour"
+        android:onClick="tourOnClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/tdlButton"
+        android:layout_marginBottom="110dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To-Do-List"
+        android:id="@+id/tdlButton"
+        android:onClick="todoliste"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="112dp" />
 
 </RelativeLayout>
