@@ -20,19 +20,9 @@
         android:text="Ersti-Tour"
         android:id="@+id/btn_tour"
         android:onClick="tourOnClick"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To-Do-List"
-        android:id="@+id/tdlButton"
-        android:onClick="todoliste"
-        android:layout_marginTop="66dp"
-        android:background="#ff9b5400"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/button11"
+        android:layout_alignStart="@+id/button10"
+        android:layout_alignEnd="@+id/button10" />
 
     <Button
         android:layout_width="wrap_content"
@@ -40,8 +30,27 @@
         android:text="Mensaplan"
         android:id="@+id/button9"
         android:onClick="mensa"
+        android:layout_below="@+id/button10"
+        android:layout_alignStart="@+id/button10"
+        android:layout_alignEnd="@+id/button10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stundenplan"
+        android:id="@+id/button10"
         android:layout_below="@+id/btn_tour"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp" />
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To-Do-Liste"
+        android:id="@+id/button11"
+        android:onClick="todoliste"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="51dp"
+        android:layout_alignEnd="@+id/btn_tour"
+        android:layout_alignStart="@+id/btn_tour" />
 
 </RelativeLayout>
