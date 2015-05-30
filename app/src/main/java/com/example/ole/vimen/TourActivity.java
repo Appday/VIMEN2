@@ -8,15 +8,30 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.Marker;
+import android.location.Location;
+import android.location.LocationManager;
+import android.content.Context;
+
 public class TourActivity extends FragmentActivity {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tour);
         setUpMapIfNeeded();
+
+        if (mMap != null) {
+            mMap.setMyLocationEnabled(true);
+            mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+        }
     }
 
     @Override
@@ -60,6 +75,14 @@ public class TourActivity extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(54.086504, 12.109541)).title("Ulmencampus"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(54.0842192, 12.1125731)).title("Parkstrasse 6"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(54.0761305, 12.1048401)).title("Mensa Sued"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(54.077513, 12.106329)).title("Konrad-Zuse-Haus(KZH)/Institut Informatik"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(54.0755451, 12.1035041)).title("Groﬂe Bibo"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(54.0815325, 12.114842)).title("Sekretariat Wirtschaftsinformatik"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(54.078917, 12.114819)).title("Zwischenbau"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(54.08076, 12.10233)).title("LT-Club"));
+
     }
 }
