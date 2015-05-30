@@ -48,8 +48,8 @@
             android:label="@string/title_activity_main_activity2" >
         </activity>
         <activity
-            android:name=".StundenplanActivity"
-            android:label="@string/title_activity_stundenplan" >
+            android:name=".StudiumActivity"
+            android:label="@string/title_activity_studium" >
         </activity>
     </application>
 

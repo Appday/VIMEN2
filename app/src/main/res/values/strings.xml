@@ -23,4 +23,5 @@
 
     <string name="action_example">Example action</string>
     <string name="title_activity_stundenplan">StundenplanActivity</string>
+    <string name="title_activity_studium">StudiumActivity</string>
 </resources>

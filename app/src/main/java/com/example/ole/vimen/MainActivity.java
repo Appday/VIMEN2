@@ -30,6 +30,11 @@ public class MainActivity extends Activity {
 
     }
 
+    public void StudiumClick (View w) {
+        Button studbutton = (Button) w;
+        startActivity(new Intent(getApplicationContext(), StudiumActivity.class));
+    }
+
     public void mensa (View view){
         Intent mensaIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.studentenwerk-rostock.de/index.php?lang=de&mainmenue=4&submenue=47"));
         startActivity(mensaIntent);

@@ -22,7 +22,7 @@
         android:onClick="tourOnClick"
         android:layout_below="@+id/button11"
         android:layout_alignStart="@+id/button10"
-        android:layout_alignEnd="@+id/button10" />
+        android:layout_alignEnd="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
@@ -37,10 +37,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stundenplan"
+        android:text="Studium"
+        android:onClick="StudiumClick"
         android:id="@+id/button10"
         android:layout_below="@+id/btn_tour"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
@@ -50,7 +52,6 @@
         android:onClick="todoliste"
         android:layout_below="@+id/textView"
         android:layout_marginTop="51dp"
-        android:layout_alignEnd="@+id/btn_tour"
         android:layout_alignStart="@+id/btn_tour" />
 
 </RelativeLayout>
