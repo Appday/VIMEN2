@@ -28,6 +28,11 @@ public class MainActivity2Activity extends Activity {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 
+    public void gogo (View w) {
+        Button gobutton = (Button) w;
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+    }
+
 
 
     @Override

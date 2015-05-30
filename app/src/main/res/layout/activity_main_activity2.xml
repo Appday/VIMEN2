@@ -70,6 +70,19 @@
         android:layout_alignTop="@+id/textView3"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Los geht's!"
+        android:id="@+id/button15"
+        android:onClick="gogo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/title"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="#01ffffff"
+        android:textColor="#ff9b5400"
+        android:textSize="20sp"/>
+
     <!--<Spinner
         android:id="@+id/fach_spinner"
         android:entries="@array/strArr"
